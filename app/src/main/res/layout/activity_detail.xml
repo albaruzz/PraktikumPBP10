@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_movie_poster2"
+            android:layout_width="150dp"
+            android:layout_height="209dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/movie_poster"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/black_panther" />
+
+        <TextView
+            android:id="@+id/tv_movie_title2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_movie_poster2"
+            tools:text="Black Panther: Wakanda Forever" />
+
+        <TextView
+            android:id="@+id/tv_movie_description2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_movie_title2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_title2"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="Queen Ramonda, Shuri, M’Baku, Okoye and the Dora
+    Milaje fight to protect their nation from intervening world powers in the
+    wake of King T’Challa’s death. As the Wakandans strive to embrace their
+    next chapter, the heroes must band together with the help of War Dog
+    Nakia and Everett Ross and forge a new path for the kingdom of Wakanda." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
